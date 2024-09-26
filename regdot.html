@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(/Agent007/.test("Agent007"));
+        document.write("<br/>");
+        document.write(/.gent007/.test("Agent007"));
+        document.write("<br/>");
+        document.write(/.gent007/.test("9gent007"));
+        document.write("<br/>");
+        document.write(/.gent007/.test("+gent007"));
+        document.write("<br/>");
+        document.write(/.gent007/.test("\ngent007"));
+        document.write("<br/>");
+        document.write(/.gent007/.test("\rgent007"));
+        
+    </script><hr>
+    <script>
+        document.write("<br/>");
+        document.write(/\.gent007/.test("9gent007"));
+        document.write("<br/>");
+        document.write(/.gent007/.test(".gent007"));
+        document.write("<br/>");
+        document.write(/.gent007/.test("A.gent007"));
+    </script><hr>
+    <script>
+        document.write("<br/>");
+        document.write(/\.wgent007/.test("9gent007"));
+        document.write("<br/>");
+        document.write(/\.wgent007/.test(".gent007"));
+        document.write("<br/>");
+        document.write(/\.wgent007/.test("+gent007"));
+
+    </script>
+
+    
+</body>
+</html>

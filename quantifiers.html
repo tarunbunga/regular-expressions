@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write(/^tarun008$/.test("tarun008"));
+        document.write("<br/>");
+        document.write(/^tarun0+8$/.test("tarun08"));
+        document.write("<br/>");
+        document.write(/^tarun0+8$/.test("tarun00008"));
+        document.write("<br/>");
+        document.write(/^tarun0+8$/.test("tarun8"));
+        document.write("<br/>");
+    </script><hr>
+    <script>
+         document.write(/^tarun008$/.test("tarun008"));
+         document.write("<br/>");
+         document.write(/^tarun0*8$/.test("tarun08"));
+         document.write("<br/>");
+         document.write(/^tarun0*8$/.test("tarun00008"));
+         document.write("<br/>");
+         document.write(/^tarun0*8$/.test("tarun8"));
+         document.write("<br/>");
+    </script><hr>
+    <script>
+         document.write(/^tarun0{2,5}$/.test("tarun008"));
+         document.write("<br/>");
+         document.write(/^tarun0{2,5}$/.test("tarun008"));
+         document.write("<br/>");
+         document.write(/^tarun0{2,5}$/.test("tarun08"));
+         document.write("<br/>");
+         document.write(/^tarun0{2,5}$/.test("tarun000008"));
+         document.write("<br/>");
+    </script>
+
+    
+</body>
+</html>
